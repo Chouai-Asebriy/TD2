@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/meteo"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/date"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            />
+
+        <DatePicker
+            android:layout_width="213dp"
+            android:layout_height="205dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/time"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+
+        <TimePicker
+            android:layout_width="210dp"
+            android:layout_height="94dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="0dp"
+            android:timePickerMode="spinner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Température en °C :"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Vitesse de vent (Km/h):"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp" />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Etat du ciel :"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"/>
+
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/valider"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="70dp"/>
+
+        <Button
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/annuler"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="70dp"/>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

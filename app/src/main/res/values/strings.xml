@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TD2</string>
+    <string name="message">Salut tout le monde</string>
+    <string name="entree">Entree</string>
+    <string name="votre_entree">Votre entree</string>
+    <string name="temperature">Température</string>
+    <string name="vent">Vitesse du vent</string>
+    <string name="ciel">Etat du ciel</string>
+    <string name="hintTemperature">Entrer la température °C</string>
+    <string name="meteo">Relevé de météo</string>
+    <string name="date">Date</string>
+    <string name="time">Heure</string>
+    <string name="spinner">Spinner</string>
+    <string name="degage">Dégagé</string>
+    <string name="couvert">Couvert</string>
+    <string name="pluvieux">Pluvieux</string>
+    <string name="valider">Valider</string>
+    <string name="annuler">Annuler</string>
+    <string-array name="dropdown">
+        <item>Dégagé</item>
+        <item>Couvert</item>
+        <item>Pluvieux</item>
+    </string-array>
+</resources>
