@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <!-- BOTTOM NAVIGATION VIEW -->
+    <string name="bottom_navigation_menu_popular">Popular</string>
+    <string name="bottom_navigation_menu_upcomming">Upcomming</string>
+    <string name="bottom_navigation_menu_search">Search</string>
+</resources>
