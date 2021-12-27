@@ -1,19 +1,29 @@
 package com.example.movies2;
 
-public class Genre {
-    private int id;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+
+public class Genre implements Serializable {
+    @SerializedName("id")
+    @Expose
+    private Integer id;
+
+    @SerializedName("name")
+    @Expose
     private String name;
 
-    public Genre(int id, String name) {
+    public Genre(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public void setId(int genreId) {
+    public void setId(Integer genreId) {
         id = genreId;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 

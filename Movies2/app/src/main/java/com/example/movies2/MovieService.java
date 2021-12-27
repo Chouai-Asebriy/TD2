@@ -8,9 +8,15 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface MovieService {
-    public static final String ENDPOINT = "https://developers.themoviedb.org/3/movies/get-popular-movies";
+    public static final String ENDPOINT = "https://api.themoviedb.org/3/";
 
-    @GET("/movie/popular/{page}")
-    Call<List<Movie>> listMovies(@Query("api_key") String apiKey, @Path("page") int page);
+    @GET("movie/popular")
+    Call<MovieResponse> listPopularMovies(@Query("api_key") String apiKey, @Query("page") int page);
+
+    @GET("movie/upcoming")
+    Call<MovieResponse> listUpcomingMovies(@Query("api_key") String apiKey, @Query("page") int page);
+
+    @GET("genre/movie/list")
+    Call<GenresResponse> getAllGenres(@Query("api_key") String apiKey);
 
 }

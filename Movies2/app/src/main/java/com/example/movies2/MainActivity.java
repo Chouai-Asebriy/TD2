@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new PopularFragment();
                             break;
                         case R.id.nav_upcomming:
-                            selectedFragment = new UpcommingFragment();
+                            selectedFragment = new UpcomingFragment();
                             break;
                         case R.id.nav_search:
                             selectedFragment = new SearchFragment();
